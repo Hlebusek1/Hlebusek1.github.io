@@ -100,3 +100,6 @@
     max-height: auto;
     
 }
+.card:hover{
+    width: 35%;
+}
