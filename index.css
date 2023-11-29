@@ -95,3 +95,8 @@
 .cards-row {
     display: inline-block;
 }
+.card-img {
+    max-width: 100%;
+    max-height: auto;
+    
+}
