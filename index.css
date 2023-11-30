@@ -103,3 +103,8 @@
 .card:hover{
     width: 35%;
 }
+
+.card{
+    max-width: 100%;
+    max-height: auto;
+}
