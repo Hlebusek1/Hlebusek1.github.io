@@ -14,10 +14,25 @@
 
 .header {
     width: 100%;
-    color: white;
     padding: 20px;
     background-color: #202020;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    position: left;
+    position: absolute;
+    left: 10%;
+    top: 2%;
+}
+
+.logo-title{
+    color:white;
+    position: absolute;
+    left: 100%;
+    top: 15%;
 }
 
 .menu-item {
@@ -25,8 +40,16 @@
 }
 
 .menu-link {
+    display: flex;
     color: white;
     text-decoration: none;
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    padding: 20px 30px;
+    display: inline-block;
+    pointer-events: none;
+    opacity: 0.25;
+    transition: 0.25s;
 }
 
 /* BANNER */
@@ -103,8 +126,32 @@
 .card:hover{
     width: 35%;
 }
-
-.card{
-    max-width: 100%;
-    max-height: auto;
+.marker{
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    z-index: 1;
 }
+.marker::before{
+    --c:rgb(15, 207, 15);
+    content: '';
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    background: var(--c);
+    top: -10px;
+    left: 50%;
+    transform: translate(-70%);
+    border-radius: 8%;
+    box-shadow: 
+    0 0 15px var(--c)
+    0 0 30px var(--c)
+    0 0 45px var(--c)
+    0 0 60px var(--c);
+}
+.description1{
+ color: white;
+    text-decoration: none;
+}
+
+
