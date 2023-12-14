@@ -1,8 +1,11 @@
+
 * {
     font-family: Verdana;
     margin: 0;
     padding: 0;
 }
+
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
 
 .container {
     max-width: 1140px;
@@ -14,6 +17,7 @@
 
 .header {
     width: 100%;
+    max-height: 90px;
     padding: 20px;
     background-color: #202020;
     box-sizing: border-box;
@@ -21,10 +25,13 @@
     justify-content: center;
     align-items: center;
 }
-.logo{
-    position: left;
+
+
+.logo-img{
+    width: 50px;
+    max-height: auto;
     position: absolute;
-    left: 10%;
+    left: 3%;
     top: 2%;
 }
 
@@ -37,6 +44,8 @@
 
 .menu-item {
     list-style: none;
+   
+    
 }
 
 .menu-link {
@@ -47,10 +56,11 @@
     z-index: 1000;
     padding: 20px 30px;
     display: inline-block;
-    pointer-events: none;
     opacity: 0.25;
     transition: 0.25s;
-}
+    
+} 
+
 
 /* BANNER */
 .banner-section {
@@ -133,21 +143,21 @@
     z-index: 1;
 }
 .marker::before{
-    --c:rgb(15, 207, 15);
+    --o:rgb(15, 207, 15);
     content: '';
     width: 50px;
     height: 20px;
     position: absolute;
-    background: var(--c);
+    background: var(--o);
     top: -10px;
     left: 50%;
     transform: translate(-70%);
     border-radius: 8%;
     box-shadow: 
-    0 0 15px var(--c)
-    0 0 30px var(--c)
-    0 0 45px var(--c)
-    0 0 60px var(--c);
+    0 0 15px var(--o)
+    0 0 30px var(--o)
+    0 0 45px var(--o)
+    0 0 60px var(--o);
 }
 .description1{
  color: white;
